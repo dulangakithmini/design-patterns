@@ -1,5 +1,5 @@
 public class EagerInitialization {
-    public static EagerInitialization instance = new EagerInitialization();
+    private static EagerInitialization instance = new EagerInitialization();
 
     private EagerInitialization() {
     }

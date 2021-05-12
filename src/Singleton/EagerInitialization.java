@@ -1,3 +1,5 @@
+package Singleton;
+
 public class EagerInitialization {
     private static EagerInitialization instance = new EagerInitialization();
 

@@ -1,3 +1,5 @@
+package Singleton;
+
 public class ThreadSafeWithSynchronized {
     private static ThreadSafeWithSynchronized instance;
 

@@ -1,11 +1,32 @@
 package Factory;
 
+import java.util.ArrayList;
+
 public abstract class Pizza {
-    abstract void prepare();
+    String name;
+    String dough;
+    String sauce;
+    ArrayList toppings = new ArrayList();
 
-    abstract void bake();
+    void prepare() {
+        System.out.println("Preparing " + name);
+        System.out.println("Tossing " + dough);
+        System.out.println("Adding " + sauce);
+        System.out.println("Adding toppings: ");
+        for (int i = 0; i < toppings.size(); i++) {
+            System.out.println(" " + toppings.get(i));
+        }
+    }
 
-    abstract void cut();
+    void bake() {
+        System.out.println("Bake for 30 min at 300");
+    }
 
-    abstract void box();
+    void cut() {
+        System.out.println("Cut the pizza into 8 pieces");
+    }
+
+    void box() {
+        System.out.println("Place the pizza inside the box");
+    }
 }

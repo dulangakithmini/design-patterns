@@ -1,4 +1,4 @@
 package Factory;
 
-public class ChicagoStyleVeggiePizza {
+public class ChicagoStyleVeggiePizza extends Pizza {
 }

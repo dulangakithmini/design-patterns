@@ -28,6 +28,10 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 
+    public boolean isVegetarian() {
+        throw new UnsupportedOperationException();
+    }
+
     //    operation method that both Menu and MenuItem will implement
     public void print() {
         throw new UnsupportedOperationException();

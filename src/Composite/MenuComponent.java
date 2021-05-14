@@ -11,7 +11,7 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 
-    public void getChild(int i) {
+    public MenuComponent getChild(int i) {
         throw new UnsupportedOperationException();
     }
 

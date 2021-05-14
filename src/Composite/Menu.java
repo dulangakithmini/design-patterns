@@ -1,6 +1,7 @@
 package Composite;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Menu extends MenuComponent {
     ArrayList<MenuComponent> menucomponents = new ArrayList<>();
@@ -35,5 +36,13 @@ public class Menu extends MenuComponent {
     //    operation method that both Menu and MenuItem will implement
     public void print() {
         System.out.println(name + " : " + descripttion);
+
+//        To iterate through all the Menu components.(Menus and MenuItems)
+//        If during this iteration we encounter another Menu object, its print() will start another iteration and so on.
+        Iterator iterator = menucomponents.iterator();
+        while (iterator.hasNext()) {
+            MenuComponent menuComponent = (MenuComponent) iterator.next();
+            menuComponent.print();
+        }
     }
 }

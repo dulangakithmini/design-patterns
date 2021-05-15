@@ -2,13 +2,13 @@ package Facade;
 
 public class HomeTheaterFacade {
     //    Use composition so that the facade has access to all the components of the subsystem
-    Popper popper;
+    PopcornPopper popcornPopper;
     DvdPlayer dvd;
     Screen screen;
 
     //    The facade is passed a reference to each component of the subsystem in its constructor. The facade then assigns each to the corresponding variable.
-    public HomeTheaterFacade(Popper popper, DvdPlayer dvd, Screen screen) {
-        this.popper = popper;
+    public HomeTheaterFacade(PopcornPopper popcornPopper, DvdPlayer dvd, Screen screen) {
+        this.popcornPopper = popcornPopper;
         this.dvd = dvd;
         this.screen = screen;
     }

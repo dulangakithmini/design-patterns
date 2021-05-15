@@ -27,7 +27,7 @@ public class HomeTheaterFacade {
         popcornPopper.pop();
         theaterLights.dim();
         screen.down();
-        projector.wideScreenKMode();
+        projector.wideScreenMode();
         amplifier.on();
         amplifier.setSurroundingSound();
         amplifier.setVolume(20);

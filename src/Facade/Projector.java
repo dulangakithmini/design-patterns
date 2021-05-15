@@ -5,7 +5,7 @@ public class Projector {
         System.out.println("Projector is on");
     }
 
-    public void wideScreenKMode() {
+    public void wideScreenMode() {
         System.out.println("Projector is in wide screen mode");
     }
 

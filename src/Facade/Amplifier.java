@@ -12,4 +12,8 @@ public class Amplifier {
     public void setVolume(int volume) {
         System.out.println("Volume is set to " + volume);
     }
+
+    public void off() {
+        System.out.println("Amplifier is off");
+    }
 }

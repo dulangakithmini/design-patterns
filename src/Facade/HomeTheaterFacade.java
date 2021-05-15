@@ -36,7 +36,13 @@ public class HomeTheaterFacade {
     }
 
     public void endMovie() {
+        popcornPopper.off();
+        theaterLights.on();
         screen.up();
+        projector.off();
+        amplifier.off();
+        dvd.stop();
+        dvd.eject();
         dvd.off();
     }
 }

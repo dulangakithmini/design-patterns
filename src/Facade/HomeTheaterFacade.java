@@ -20,7 +20,7 @@ public class HomeTheaterFacade {
     }
 
     //    bring the components of the subsystem together into a unified interface
-    public void WatchMovie(String movie) {
+    public void watchMovie(String movie) {
         System.out.println("Get ready to watch a movie");
 
         popcornPopper.on();
@@ -36,6 +36,8 @@ public class HomeTheaterFacade {
     }
 
     public void endMovie() {
+        System.out.println("Shutting movie theater down");
+
         popcornPopper.off();
         theaterLights.on();
         screen.up();

@@ -21,8 +21,18 @@ public class HomeTheaterFacade {
 
     //    bring the components of the subsystem together into a unified interface
     public void WatchMovie(String movie) {
+        System.out.println("Get ready to watch a movie");
+
+        popcornPopper.on();
+        popcornPopper.pop();
+        theaterLights.dim();
         screen.down();
+        projector.wideScreenKMode();
+        amplifier.on();
+        amplifier.setSurroundingSound();
+        amplifier.setVolume(20);
         dvd.on();
+        dvd.play(movie);
     }
 
     public void endMovie() {

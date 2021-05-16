@@ -1,11 +1,11 @@
 package Builder;
 
 public class Phone {
+    private double screenSize;
+    private int battery;
     private String os;
     private int ram;
     private String processor;
-    private double screenSize;
-    private int battery;
 
     public Phone(String os, int ram, String processor, double screenSize, int battery) {
         this.os = os;
